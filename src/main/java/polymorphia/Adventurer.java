@@ -24,7 +24,15 @@ public class Adventurer {
      */
     public boolean fight(Creature foe) {
         // TODO: Implement the fight logic here
-        // This is just a placeholder implementation. You should replace it with your own logic.
-        return false;
+        // This is just a placeholder implementation. You should replace it with your own logic
+        return health > foe.getHealth();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getHealth() {
+        return health;
     }
 }
